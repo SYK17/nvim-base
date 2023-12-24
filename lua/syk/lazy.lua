@@ -11,15 +11,15 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup({
-  {import = "syk.plugins"},
-  {import = "syk.plugins.lsp"}
-}, {
+require('lazy').setup("syk.plugins", {
   install = {
     colorscheme = {"kanagawa-dragon"},
-  },
+  }, 
   checker = {
     enabled = true,
     notify = false,
   },
+  change_detection = {
+    notify = false,
+  }
 })
