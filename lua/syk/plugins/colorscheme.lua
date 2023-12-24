@@ -5,5 +5,8 @@ return {
       -- load colorscheme here
       vim.cmd("colorscheme kanagawa-dragon")
     end,
+    "yorickpeterse/nvim-grey",
+    config = function()
+      vim.cmd("colorscheme nvim-grey")
+    end,
   }
-
