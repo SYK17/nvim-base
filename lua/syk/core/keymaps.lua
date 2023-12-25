@@ -23,7 +23,12 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
+-- increment/decrement numbers
+keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
+keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
+
 -- Neotree toggle
-vim.keymap.set('n', '<C-e>', '<Cmd>Neotree toggle<CR>')
+vim.keymap.set('n', "<Leader>e", "<Cmd>Neotree toggle<CR>")
 
 -- Lazy shortcut
+-- lz = Lazy

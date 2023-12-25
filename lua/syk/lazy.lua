@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup("syk.plugins", {
+require('lazy').setup({{import = "syk.plugins"}, {import = "syk.plugins.lsp"}}, {
   install = {
     colorscheme = {"kanagawa-dragon"},
   }, 
